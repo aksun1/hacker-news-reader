@@ -1,0 +1,152 @@
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  text-align: center;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+section.content {
+	padding-top:20px;
+	color: #333;
+}
+.container {
+	margin:0 10px;
+	position:relative
+}
+
+
+
+.row {
+	width:100%;
+	position:relative;
+	clear:both;
+	display: inline-block;
+}
+.news-item {
+	margin-bottom:10px
+}
+.row > .image {
+	display:none;
+}
+.row > .image > img {
+	max-height:100px;
+	max-width:100%;
+}
+.row > .content {
+	float:left;
+	width:100%;
+	padding-right:.5%;
+	padding-left:.5%;
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		width:60%;
+		margin:0 auto;
+	}
+	.row > .image {
+		display:block;
+		float:left;
+		width:9%;
+		padding-right:.5%;
+		padding-left:.5%;
+		text-align:center
+	}
+	.row > .content {
+		width:89%
+	}
+}
+
+
+.news-item h2 {
+	margin-top:0;
+	margin-bottom:5px;
+}
+.news-item h2 > a {
+	color:#333;
+	text-decoration:none;
+}
+.news-item h2 > a:hover {
+	text-decoration:underline;
+}
+.news-item .actions, .comment .actions {
+	font-size:80%;
+	color:#666;
+}
+.news-item .actions a, .news-item .actions span,
+.comment .actions a, .comment .actions span {
+	margin-right:5px;
+}
+.news-item .actions span.source {
+	color:#444;
+}
+.news-item .actions span.type {
+	background-color: #bbb;
+	color: #fff;
+	padding: 1px 4px;
+	text-transform: uppercase;
+	font-size:11px;
+	border-radius:2px;
+}
+
+.news-items .loader {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom:10px;	
+	clear:both;
+}
+
+.actions ul.actions-list {
+	text-align:center;
+	list-style-type: none;
+    margin: 0;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.actions ul.actions-list > li  {
+	display:inline-block;
+
+}
+.actions ul.actions-list > li input  {
+	display:none;
+}
+.actions ul.actions-list > li span  {
+	padding: 5px;
+	cursor:pointer;
+}
+.actions ul.actions-list > li span.active  {
+	font-weight:bold;
+}
+
+.comment {
+	margin-bottom:20px;
+}
+
+.comment .text {
+	margin:0
+}
+.comment .text p {
+	margin:5px 0
+}
+
+.comment .replies {
+	margin-left: 20px;
+	margin-top: 10px;
+}
